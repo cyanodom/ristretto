@@ -1,0 +1,13 @@
+int a=5; // Une variable globale avec initialisation
+int fact(int n) {
+if (n==0)
+  return 1;
+else
+  return n*fact(n-1);
+}
+/*
+  Il est obligatoire de d´efinir une fonction void main(void)
+*/
+void main(void) {
+  println fact(a); // On remarque que println est une instruction, pas une fonction
+}
