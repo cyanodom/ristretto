@@ -7,17 +7,12 @@
 #define MIN_CHAR 32
 #define MAX_CHAR 128
 
-//STR MARCOS :
-
-#define XSTR(X) #X
-#define STR(X) XSTR(X)
-#define ERROR(X) "***" STR() "***\n"
-
 //PARSE VALUES :
 
 #define TYPE_INT 0
 #define TYPE_FLOAT 1
 #define TYPE_BOOL 2
+
 #define INST_RETURN 0
 #define INST_PRINT 1
 #define INST_PRINTLN 2

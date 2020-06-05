@@ -12,7 +12,7 @@ YACCOPTS=--graph
 
 PROG=ristretto
 
-$(PROG): lex.yy.o $(PROG).tab.o
+$(PROG): lex.yy.o $(PROG).tab.o bytecode.o
 	$(CC) $+ -o $@ $(LDFLAGS)
 
 lex.yy.c: $(PROG).l $(PROG).tab.h
